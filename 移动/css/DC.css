@@ -1,0 +1,352 @@
+/*
+* @Author: Mickey
+* @Date:   2018-08-09 09:45:00
+* @Last Modified by:   Mickey
+* @Last Modified time: 2018-08-09 17:08:20
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.DC{
+	width: 7.5rem;
+	background-color: #fff;
+}
+.top{
+	width: 100%;
+	height: 3rem;
+	background-color: #26b3ee;
+	padding-left: 0.24rem;
+	padding-right: 0.24rem;
+	position: fixed;
+	top: 0;
+	/* position: relative; */
+}
+.top .back{
+	display: block;
+	width: 0.22rem;
+	height: 1rem;
+	background-image: url('../img/返回.png');
+	background-size: 0.22rem 0.4rem;
+	background-repeat: no-repeat;
+	background-position: 0 0.3rem;
+}
+.top .share{
+	display: block;
+	width: 0.4rem;
+	height: 1rem;
+	background-image: url('../img/店铺分享.png');
+	background-size: 0.4rem 0.4rem;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0.3rem;
+	right: 0.24rem;
+}
+.top .favorite{
+	display: block;
+	width: 0.4rem;
+	height: 1rem;
+	background-image: url('../img/店铺收藏.png');
+	background-size: 0.4rem 0.4rem;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0.3rem;
+	right: 0.79rem;
+}
+.top .search{
+	display: block;
+	width: 0.4rem;
+	height: 1rem;
+	background-image: url('../img/店铺搜索.png');
+	background-size: 0.4rem 0.4rem;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0.3rem;
+	right: 1.34rem;
+}
+.top .content .icon{
+	display: block;
+	width: 2.38rem;
+	height: 1.97rem;
+	background-image: url('../img/店铺图标.png');
+	background-repeat: no-repeat;
+	background-size: 2.38rem 1.97rem;
+	position: absolute;
+	bottom: 0;
+	left: 0.24rem;
+}
+.top .content .name{
+	font-size: 0.28rem;
+	position: absolute;
+	top: 1rem;
+	left: 3rem;
+}
+.top .content .star{
+	font-size: 0.28rem;
+	position: absolute;
+	top: 1rem;
+	left: 4.2rem;
+	color: #ff8800;
+}
+.top .content .dot{
+	font-size: 0.18rem;
+	position: absolute;
+	top: 1.3rem;
+	left: 3rem;
+	color: #c2c5c7;
+}
+.top .content .MJ{
+	width: 0.65rem;
+	height: 0.3rem;
+	border: 0.03rem solid #fff;
+	border-radius: 0.5rem;
+	position: absolute;
+	top: 1.6rem;
+	left: 3rem;
+	color: #fff;
+	font-size: 0.22rem;
+	text-align: center;
+	line-height: 0.24rem;
+}
+.top .content .MJQ{
+	position: absolute;
+	top: 1.65rem;
+	left: 4rem;
+	color: #fff;
+	font-size: 0.18rem;
+}
+.top .content .TJ{
+	width: 0.65rem;
+	height: 0.3rem;
+	border: 0.03rem solid #fff;
+	border-radius: 0.5rem;
+	position: absolute;
+	top: 2.1rem;
+	left: 3rem;
+	color: #fff;
+	font-size: 0.22rem;
+	text-align: center;
+	line-height: 0.24rem;
+}
+.top .content .TJQ{
+	position: absolute;
+	top: 2.15rem;
+	left: 4rem;
+	color: #fff;
+	font-size: 0.18rem;
+}
+.top .content .distance{
+	background-image: url('../img/定位白色.png');
+	background-repeat: no-repeat;
+	background-size: 0.17rem 0.21rem;
+	position: absolute;
+	top: 2.6rem;
+	left: 3rem;
+	font-size: 0.18rem;
+	color: #fff;
+}
+.top .content .time{
+	background-image: url('../img/时间白色.png');
+	background-repeat: no-repeat;
+	background-size: 0.17rem 0.21rem;
+	position: absolute;
+	top: 2.6rem;
+	left: 4rem;
+	font-size: 0.18rem;
+	color: #fff;
+}
+.choice{
+	width: 7.5rem;
+	height: 1rem;
+	box-shadow: 0 0.03rem 0 0 #dedfe0;
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-left: 0.24rem;
+	padding-right: 0.24rem;
+	font-size: 0.36rem;
+	line-height: 1rem;
+	position: fixed;
+	top: 3rem;
+}
+.choice .order{
+	width: 0.8rem;
+	height: 0.08rem;
+	border-radius: 0.5rem;
+	position: absolute;
+	background-color: #1fafef;
+	left: 1.03rem;
+	top: 0.92rem;
+}
+.menu{
+	position: fixed;
+	left: 0;
+	top: 4.03rem;
+}
+.menu li{
+	width: 1.85rem;
+	height: 0.9rem;
+	background-color: #f7f7f7;
+	float: top;
+	font-size: 0.28rem;
+	text-align: center;
+	line-height: 0.9rem;
+}
+.list{
+	width: 5.23rem;
+	height: 10.6rem;
+    margin-left: 2.27rem;
+    overflow: scroll;
+    overflow: hidden;
+    margin-top: 4rem;
+}
+.list li{
+	width: 5.23rem;
+	height: 1.43rem;
+	margin-right: 0.24rem;
+	float: right ;
+    margin-top: 0.2rem;
+	box-shadow: 0 0.02rem 0.1rem 0.03rem #22b1ef;
+	margin-bottom: 0.3rem;
+	position: relative;
+}
+.list .name{
+	font-size: 0.24rem;
+	margin-left: 1.7rem;
+	position: absolute;
+	top: 0.13rem;
+}
+.list .dot{
+	font-size: 0.24rem;
+	margin-left: 1.7rem;
+	position: absolute;
+	top: 0.35rem;
+	color: #cac8c8;
+}
+.list .star{
+	font-size: 0.24rem;
+	margin-left: 1.7rem;
+	position: absolute;
+	top: 0.55rem;
+	color: #ffff00;
+}
+.list .money{
+	font-size: 0.24rem;
+	margin-left: 1.7rem;
+	position: absolute;
+	top: 0.9rem;
+}
+.list .num{
+	display: block;
+	width: 0.25rem;
+	height: 0.25rem;
+	background-image: url('../img/数量+.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0.05rem;
+	top:0.05rem;
+}
+.list li:nth-child(1){
+	background-image: url('../img/水蜜桃挞.png');
+	background-repeat: no-repeat;
+	background-position: 0.25rem center;
+}
+.list li:nth-child(2){
+	background-image: url('../img/黑僧林蛋糕.png');
+	background-repeat: no-repeat;
+	background-position: 0.25rem center;
+}
+.list li:nth-child(3){
+	background-image: url('../img/烧仙草奶茶.png');
+	background-repeat: no-repeat;
+	background-position: 0.25rem center;
+}
+.list li:nth-child(4){
+	background-image: url('../img/大果粒柚子茶超大杯.png');
+	background-repeat: no-repeat;
+	background-position: 0.25rem center;
+}
+.list li:nth-child(5){
+	background-image: url('../img/豆沙圈面包.png');
+	background-repeat: no-repeat;
+	background-position: 0.25rem center;
+}
+.bottom{
+	width: 100%;
+	height: 1rem;
+	box-shadow: 0 0.04rem 0.08rem 0.03rem #22b1ef;
+	background-color: #fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding-left: 0.24rem;
+	padding-right: 0.24rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.bottom .box{
+	width: 0.38rem;
+	height: 100%;
+	position: relative;
+}
+.bottom .box span{
+	position: absolute;
+	font-size: 0.18rem;
+	text-align: center;
+	margin-top: 0.6rem;
+}
+.bottom .box:nth-child(1){
+	background-image: url('../img/首页.png');
+	background-repeat: no-repeat;
+	background-size: 0.38rem 0.38rem;
+	background-position: 0 0.22rem;
+}
+.bottom .box:nth-child(2){
+	background-image: url('../img/附近.png');
+	background-repeat: no-repeat;
+	background-size: 0.38rem 0.38rem;
+	background-position: 0 0.22rem;
+}
+.bottom .box:nth-child(3){
+	background-image: url('../img/发现.png');
+	background-repeat: no-repeat;
+	background-size: 0.38rem 0.38rem;
+	background-position: 0 0.22rem;
+}
+.bottom .box:nth-child(4){
+	background-image: url('../img/订单.png');
+	background-repeat: no-repeat;
+	background-size: 0.38rem 0.38rem;
+	background-position: 0 0.22rem;
+}
+.bottom .box:nth-child(5){
+	background-image: url('../img/我 的.png');
+	background-repeat: no-repeat;
+	background-size: 0.38rem 0.38rem;
+	background-position: 0 0.22rem;
+}
+.bottom .box:nth-child(1):hover{
+	background-image: url('../img/首页-选中.png');
+	color: #ff8800;
+}
+.bottom .box:nth-child(2):hover{
+	background-image: url('../img/附近选中.png');
+	color: #ff8800;
+}
+.bottom .box:nth-child(3):hover{
+	background-image: url('../img/发现选中.png');
+	color: #ff8800;
+}
+.bottom .box:nth-child(4):hover{
+	background-image: url('../img/订单选中.png');
+	color: #ff8800;
+}
+.bottom .box:nth-child(5):hover{
+	background-image: url('../img/我的选中.png');
+	color: #ff8800;
+}
